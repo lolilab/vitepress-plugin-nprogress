@@ -1,0 +1,30 @@
+{
+  "name": "@andatoshiki/vitepress-plugin-nprogress",
+  "version": "0.0.1",
+  "description": "Vitepress plugin for implementing an nprogress loading bar at the top of the documentation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolilab/vitepress-plugin-nprogress.git"
+  },
+  "type": "module",
+  "author": "Anda Toshiki, LoliLab <hello@toshiki.dev>",
+  "license": "MIT",
+  "private": false,
+  "main": "./lib/vitepress-plugin-nprogress.umd.cjs",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.19.4",
+    "@types/node": "^18.11.0",
+    "typescript": "^4.8.4",
+    "vitepress": "^1.0.0-alpha.18"
+  }
+}
